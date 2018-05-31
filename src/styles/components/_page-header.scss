@@ -1,0 +1,46 @@
+.page-header{
+    background: fade-out($color: $my-orange, $amount: 0.92);
+    padding: $l-size 0;
+    margin-bottom: $l-size;
+}
+
+.page-header__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    @media (max-width : $desktop-breakpoint) {
+        align-items: center;
+    }
+    
+}
+
+.page-header__action{
+    padding-top: $s-size;
+    
+}
+
+.page-header__title{
+    font-size: $font-size-xlarge;
+    margin: 0 ;
+    line-height: 2;
+    font-weight: 300;
+    letter-spacing: 3px;
+    span {
+        font-weight: 700;
+    }
+
+    @media (max-width : $desktop-breakpoint) {
+        font-size: $font-size-medium;
+        letter-spacing: 1px;
+        font-weight: 350;
+
+        span{
+            font-weight: 650;
+        }
+    }
+
+    @media (max-width : 22rem) {
+        font-size: $font-size-smedium;
+    }
+}

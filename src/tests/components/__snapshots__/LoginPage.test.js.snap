@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render Login Page correctly 1`] = `
+<div
+  className="box-layout"
+>
+  <div
+    className="box-layout__fade"
+  >
+    <div
+      className="box-layout__title"
+    >
+      <p
+        className="box-layout__heading"
+      >
+        Boilerplate
+      </p>
+      <p
+        className="box-layout__text"
+      >
+        Tag line for app.
+      </p>
+    </div>
+    <div
+      className="box-layout__box"
+    >
+      <button
+        className="box-layout__button"
+      >
+        Login with
+        <img
+          alt="Google"
+          className="box-layout__buttonimg"
+          src="/media/Google.png"
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;

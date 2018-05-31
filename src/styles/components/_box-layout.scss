@@ -1,0 +1,93 @@
+.box-layout{
+    align-items: center;
+    background: url('/media/login_image.jpg');
+    background-size: cover;
+    background-position:center;
+    display: flex;
+    height : 100vh;
+    width : 100vw;
+}
+
+.box-layout:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.box-layout__fade{
+    align-items: center;
+    background : fade-out($color: #ff7300, $amount: 0.25);
+    box-shadow: 0px 0.5px white,0px -0.5px white ;
+    display: flex;
+    justify-content: space-between;
+    padding: $m-size $l-size;
+    position: relative;
+    width: 100%;
+    -moz-box-shadow: 0px 0.5px white,0px -0.5px white;
+    -webkit-box-shadow: 0px 0.5px white,0px -0.5px white;
+
+    @media (max-width : $desktop-breakpoint) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.box-layout__title{
+    p{
+        margin: 0;
+        padding: 0;
+    }
+
+    @media (min-width : $desktop-breakpoint) {
+        padding-bottom: $s-size;
+    }
+}
+
+
+.box-layout__heading{
+    color : white;
+    font-size: $font-size-xxlarge;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+
+.box-layout__text{
+    color : white;
+
+    @media (min-width : $desktop-breakpoint) {
+        font-size: $font-size-xmedium ;
+        font-weight: 400;
+        letter-spacing: 1.5px;
+    }
+}
+
+
+.box-layout__box{
+    @media (max-width : $desktop-breakpoint) {
+        padding: $l-size 0 $m-size 0;
+    }
+}
+
+.box-layout__button{
+    padding: 0 0 0 $s-size;
+    background-color: white;
+    color: $my-orange;
+    font-size: 1.8rem;
+    font-weight: 700;
+    border: none;
+    margin-right : $s-size ;
+    display: flex;
+    align-items: center;
+}
+
+.box-layout__buttonimg{
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+}
