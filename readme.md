@@ -1,3 +1,3 @@
-# my-react-big
+# React-Boilerplate
 
-This is my first react big application
+React Boiler plate
